@@ -1,0 +1,23 @@
+{
+  "name": "bernardo-portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch  src/scss/styles.scss src/css/styles.css",
+    "sass-min": "sass --watch  src/scss/styles.scss src/css/styles.min.css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6",
+    "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  }
+}
