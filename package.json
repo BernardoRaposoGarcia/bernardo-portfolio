@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "chmod +x node_modules/.bin/vite && vite build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch  src/scss/styles.scss src/css/styles.css",
     "sass-min": "sass --watch  src/scss/styles.scss src/css/styles.min.css --style compressed"
