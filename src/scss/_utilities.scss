@@ -1,0 +1,46 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    // Add a new utilities
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    ),
+
+    // sass list amend
+    "align": map-merge(
+        map-get($utilities, "align"),
+        (
+            values: append(
+                map-get(map-get($utilities, "align"), "values"),
+                sub
+            )
+        )
+    ),
+
+    // sass map amend
+    "width": map-merge(
+        map-get($utilities, "width"),
+        (
+            values: map-merge(
+                map-get(map-get($utilities, "width"), "values"), 
+                (
+                    5: 5%,
+                    10: 10%,
+                    20: 20%
+                )
+            )
+        )
+    ),
+
+    // add a custom class
+    "fixed-width": (
+    property: width,
+    class: f-w,
+    values: map-merge($fixed-widths, (0: 0))
+    )
+
+  )
+);

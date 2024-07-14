@@ -6,12 +6,10 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch  src/scss/styles.scss src/css/styles.css",
-    "sass-min": "sass --watch  src/scss/styles.scss src/css/styles.min.css --style compressed"
+    "preview": "vite preview"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bernardo Guilherme M. R. Garcia",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.77.6",
