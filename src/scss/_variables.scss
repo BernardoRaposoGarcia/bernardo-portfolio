@@ -1,14 +1,17 @@
+
+// Variables
+$lifegreen: #00ff62;
+// $font-family-sans-serif: "Poppins", sans-serif;
 // $btn-padding-y: 5rem;
+
+// Create your own map
+
+$custom-theme-colors: (
+  "lifegreen":  $lifegreen
+);
 
 $fixed-widths: (
     1: .25rem,
     2: .50rem,
     3: .75rem
 );
-
-// Create your own map
-
-$custom-colors: (
-  "lifegreen": rgb(0, 255, 98)
-);
-// $font-family-sans-serif: "Poppins", sans-serif;
