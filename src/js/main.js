@@ -17,3 +17,28 @@ import * as bootstrap from 'bootstrap'
 // })
 
 
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Cria a loading page dinamicamente
+    const contentHidden = document.querySelectorAll('.content')
+    const loadingContainer = document.createElement('div');
+
+    loadingContainer.classList.add('loading-container', 'd-flex', 'flex-column', 'vh-100', 'align-items-center', 'justify-content-center');
+    loadingContainer.innerHTML = `
+        <div class="spinner-border text-primary" role="status">
+        </div>
+        <p>Loading...</p>
+    `;
+    document.body.appendChild(loadingContainer);
+
+    // Simula um tempo de carregamento (por exemplo, 2 segundos)
+    setTimeout(() => {
+        // Remove completamente o conteúdo HTML da loading page
+        // document.body.innerHTML = '';
+
+        document.body.removeChild(loadingContainer);
+        contentHidden.forEach(element => {
+            element.classList.toggle('visually-hidden');
+        });
+    }, 1000);
+});
