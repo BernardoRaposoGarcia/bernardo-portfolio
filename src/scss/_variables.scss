@@ -1,13 +1,17 @@
 
 // Variables
-$lifegreen: #00ff62;
-// $font-family-sans-serif: "Poppins", sans-serif;
+$enable-gradients:  true;
+$lbluefox: #1893F8;
+$dbluefox: #024ef2;
+$font-family-sans-serif: "Poppins", sans-serif;
 // $btn-padding-y: 5rem;
 
 // Create your own map
 
 $custom-theme-colors: (
-  "lifegreen":  $lifegreen
+  "lbluefox":  $lbluefox,
+  "dbluefox":  $dbluefox
+
 );
 
 $fixed-widths: (
@@ -15,3 +19,5 @@ $fixed-widths: (
     2: .50rem,
     3: .75rem
 );
+// 1893F8
+// 024EF2

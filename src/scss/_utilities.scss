@@ -1,8 +1,24 @@
 $utilities: map-merge(
   $utilities,
   (
-
-    // Add a new utilities
+    "gradient-bluefox": (
+      property: background-image,
+      class: gradient,
+      values: (
+        bluefox: linear-gradient(to bottom, $lbluefox, $dbluefox)
+      )
+    ),
+    "background-clip": (
+    property: -webkit-background-clip,
+    class: clip,
+    values: text
+    ),
+    "text-fill": (
+    property: -webkit-text-fill-color,
+    class: fill,
+    values: transparent
+    ),
+    Add a new utilities
     "cursor": (
       property: cursor,
       class: cursor,
@@ -45,3 +61,5 @@ $utilities: map-merge(
 
   )
 );
+
+
